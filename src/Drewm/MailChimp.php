@@ -74,6 +74,7 @@ class MailChimp
                     'protocol_version' => 1.1,
                     'user_agent'       => 'PHP-MCAPI/2.0',
                     'method'           => 'POST',
+                    'ignore_errors'	   => true,
                     'header'           => "Content-type: application/json\r\n".
                                           "Connection: close\r\n" .
                                           "Content-length: " . strlen($json_data) . "\r\n",
